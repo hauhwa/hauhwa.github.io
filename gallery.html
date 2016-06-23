@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container_gallery">
+        <img src="assets/images/jp-map.jpg" alt="" width="100%">
+        <ul class="nav">
+            <li id="okoyama"><a href="#img1" data-toggle="tab">About</a>
+            </li>
+            <li class="active"><a href="#img2" data-toggle="tab">
+                            Blog</a>
+            </li>
+            <li><a href="#tab3" data-toggle="tab">
+                            Gallery</a>
+            </li>
+        </ul>
+        <a href="#img1" id="okoyama" class="btn btn-primary" role="button"></a>
+        <a href="#img2" id="kurashiki" class="btn btn-primary" role="button"></a>
+    </div>
+
+    <div class="tab-content">
+
+        <div id="img1" class="tab-pane">
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img src="assets/images/P_20150413_181818.jpg" alt=""></div>
+                    <div class="item"><img src="assets/images/vladstudio_new_york_dark_1440x960_signed.jpg" alt=""></div>
+                </div>
+                <div class="control-btn"><a href="#slideshow" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a><a href="#slideshow" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div>
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow" data-slide-to="1"></li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="img2" class="tab-pane">
+            <div id="slideshow2" class="carousel slide tab-pane" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img src="assets/images/P_20150413_181818.jpg" alt=""></div>
+                    <div class="item"><img src="assets/images/P_20150413_181852.jpg" alt=""></div>
+                </div>
+                <div class="control-btn"><a href="#slideshow2" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a><a href="#slideshow2" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div>
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow2" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow2" data-slide-to="1"></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
